@@ -1,0 +1,38 @@
+[00:10:43.738] Running build in Washington, D.C., USA (East) – iad1
+[00:10:43.755] Cloning github.com/weddinginvite-com/templatepernikahan (Branch: main, Commit: 64c3301)
+[00:10:44.260] Skipping build cache, deployment was triggered without cache.
+[00:10:44.777] Cloning completed: 1.022s
+[00:10:45.113] Running "vercel build"
+[00:10:45.483] Vercel CLI 41.7.3
+[00:10:46.054] Installing dependencies...
+[00:10:50.379] npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+[00:10:50.402] npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+[00:10:55.430] 
+[00:10:55.430] added 485 packages in 9s
+[00:10:55.430] 
+[00:10:55.430] 64 packages are looking for funding
+[00:10:55.430]   run `npm fund` for details
+[00:10:55.584] 
+[00:10:55.585] > rest-express@1.0.0 build
+[00:10:55.585] > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+[00:10:55.585] 
+[00:10:56.052] [36mvite v5.4.14 [32mbuilding for production...[36m[39m
+[00:10:56.097] transforming...
+[00:10:56.108] [32m✓[39m 2 modules transformed.
+[00:10:56.114] [31mx[39m Build failed in 39ms
+[00:10:56.114] [31merror during build:
+[00:10:56.114] [31m[vite]: Rollup failed to resolve import "/src/main.tsx" from "/vercel/path0/client/index.html".
+[00:10:56.114] This is most likely unintended because it can break your application at runtime.
+[00:10:56.114] If you do want to externalize this module explicitly add it to
+[00:10:56.115] `build.rollupOptions.external`[31m
+[00:10:56.115]     at viteWarn (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:65747:17)
+[00:10:56.115]     at onwarn (file:///vercel/path0/node_modules/@vitejs/plugin-react/dist/index.mjs:280:9)
+[00:10:56.115]     at onRollupWarning (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:65777:5)
+[00:10:56.115]     at onwarn (file:///vercel/path0/node_modules/vite/dist/node/chunks/dep-CHZK6zbr.js:65442:7)
+[00:10:56.115]     at file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:19452:13
+[00:10:56.116]     at Object.logger [as onLog] (file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:21178:9)
+[00:10:56.116]     at ModuleLoader.handleInvalidResolvedId (file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:20067:26)
+[00:10:56.116]     at file:///vercel/path0/node_modules/rollup/dist/es/shared/node-entry.js:20025:26[39m
+[00:10:56.131] Error: Command "cd client && npm run build" exited with 1
+[00:10:56.344] 
+[00:10:59.294] Exiting build container
